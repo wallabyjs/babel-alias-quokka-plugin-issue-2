@@ -1,0 +1,31 @@
+{
+  "name": "babel-alias-quokka-plugin-issues-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "@vue/babel-preset-app": "^3.5.0",
+    "babel-alias-quokka-plugin": "^1.0.9"
+  },
+  "quokka": {
+    "env": {
+      "params": {
+        "env": "VUE_CLI_BABEL_TRANSPILE_MODULES=true"
+      }
+    },
+    "babel": true,
+    "plugins": [
+      "babel-alias-quokka-plugin"
+    ],
+    "alias": {
+      "test": "./test"
+    }
+  }
+}
